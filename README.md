@@ -1,3 +1,5 @@
+# Enabling TOTP for your PayPal account
+
 This guide is based on https://medium.com/@dubistkomisch/set-up-2fa-two-factor-authentication-for-paypal-with-google-authenticator-or-other-totp-client-60fee63bfa4f - but some information is outdated.
 
 There's a simpler method mentioned in the article, however I wouldn't really rely on a random website to touch any of my financial data.
