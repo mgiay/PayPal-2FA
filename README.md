@@ -8,7 +8,9 @@ What you'll need:
 - a TOTP generating app/program (e.g. KeePassXC for desktop, andOTP on Android)
 - A running linux machine connected to the internet (A VM or a LiveCD works great since you won't have to clean up)
 
-- You need python-pip and git - the command to install them depends on your OS, on Ubuntu it's:
+If you have everything set up, 
+
+- We need python-pip and git - the command to install them depends on your OS, on Ubuntu it's:
 `sudo apt install python-pip git qrencode`
 ![Install pip and git](https://github.com/Datenschutz/PayPal-2FA/blob/master/screenshots/1-installdeps.png)
 - Clone this repository - it includes fixes that prevent the original package "vipaccess" from working and has some other improvements:  
@@ -33,7 +35,7 @@ Since we are not installing as superuser, vipaccess won't be included in PATH, b
 - For mobile use: Generate a QR code, replace otpauth://XXX with the otpauth:// URL you just copied:
 ![generate QR](https://github.com/Datenschutz/PayPal-2FA/blob/master/screenshots/9-genqr.png)
 `qrencode -o qr.png 'otpauth://XXX'`
-This will produce qr.png sitting in your home directory. You can scan this QR code with any TOTP compatible app, I recommend andOTP for Android.
+This will produce qr.png sitting in your home directory. We can scan this QR code with any TOTP compatible app, I recommend andOTP for Android.
 If you want to generate the tokens on a desktop PC, you could use KeePassXC. The secret is included in the othauth:// URL, it's what follows `secret=`
 - Copy the ID that starts with VSMT:
 ![copy ID](https://github.com/Datenschutz/PayPal-2FA/blob/master/screenshots/10-copyid.png)
