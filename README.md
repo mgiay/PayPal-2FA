@@ -25,6 +25,7 @@ If you have everything set up:
 Since you are not installing as superuser, vipaccess won't be included in PATH, but that's fine.
 - Go back to your home folder:
 ![go back home](https://github.com/Datenschutz/PayPal-2FA/blob/master/screenshots/5-gohome.png)
+`cd ..`
 - Generate your Tokens - you need an active internet connection:  
 ![generate tokens](https://github.com/Datenschutz/PayPal-2FA/blob/master/screenshots/6-generatetokens.png)
 `.local/bin/vipaccess provision -p -t VSMT`
